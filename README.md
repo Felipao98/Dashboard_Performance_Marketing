@@ -35,6 +35,7 @@ DIVIDE(
     SUM('dados_marketing'[custo]), 
     0
 )`
+
     ![Fórmula ROI](images/roi.png)
 
 ## 💡 Insights Estratégicos Extraídos
