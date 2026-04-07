@@ -15,20 +15,24 @@ O projeto foi dividido para responder a necessidades específicas de análise:
 Para garantir a interatividade e a precisão das visões, utilizei **DAX** para criar medidas dinâmicas e o **Power Query** para a normalização dos dados, tratando valores nulos e padronizando as categorias demográficas presentes no dataset original.
 
 ## 🛠️ Problema de Negócio
-O objetivo é solucionar a fragmentação dos dados de marketing. Antes deste dashboard, não era possível:
-* Cruzar o custo de diferentes plataformas em uma única visão.
-* Identificar rapidamente quais campanhas estavam com ROI negativo.
-* Entender a jornada do funil (Impressões -> Cliques -> Conversões) de forma visual e intuitiva.
+O desafio central era a falta de integração entre os dados demográficos dos clientes e os indicadores de performance de vendas. A equipe de marketing enfrentava dificuldades em:
+* **Identificar o Perfil do Cliente Ideal (ICP)**: Não havia clareza sobre como a escolaridade, renda ou estado civil influenciavam o comportamento de compra.
+* **Descentralização Geográfica**: Dificuldade em visualizar o desempenho de vendas por pais e por ponto de venda (loja física vs. online).
+* **Inconsistência de Métricas**: Ausência de cálculos automáticos para ROI e Ticket Médio integrados à visão comportamental dos consumidores.
 
 ## ⚙️ Tecnologias e Dados
-* **Ferramenta**: Power BI Desktop.
-* **Processamento (ETL)**: Limpeza e padronização de moedas e datas via Power Query.
-* **Dataset**: Base de dados contendo `id_campanha`, `plataforma`, `cliques`, `impressoes`, `custo`, `conversoes` e `receita`.
+* **Ferramenta**: Power BI Desktop para modelagem e visualização.
+* **Processamento (ETL)**: Utilização do Power Query para tratamento de dados sensíveis, conversão de tipo de dados (como faturamento e custo) e normalização de categorias demográficas.
+* **Dataset**: Base de dados *dados_marketing.csv* composta por variáveis como:
+  * **Demográficas**: Escolaridades, Renda, Estado Civil e Idade.
+  * **Comerciais**: Volume de vendas (Loja, Web, Catálogo) e reclamações.
+  * **Marketing**: Cliques, impressões, custos e retorno financeiro por campanha.
 
 ## 💡 Insights Estratégicos Extraídos
-* **Otimização de Verba**: Identificação de plataformas com baixo CPC, mas alta conversão.
-* **Escalabilidade**: Detecção de campanhas de alta performance prontas para receber maior investimento.
-* **Sazonalidade**: Análise do comportamento das vendas ao longo do período filtrado.
+* **Fidelização vs. Escolaridade**: Clientes com nível superior ou mestrado apresentam um ticket médio superior e menor taxa de reclamação, sugerindo que campanhas com linguagem técnica e informativa são mais eficazes.
+* **Geolocalização de Receita**: Países específicos (como Brasil e EUA) demonstraram maior maturidade para vendas online, enquanto outros mercados ainda dependem fortemente de canais físicos/catálogo.
+* **Eficiência do ROI**: Através da análise de performance, identificou-se que campanhas com alto número de impressões não necessariamente geram o melhor ROI; a conversão está mais atrelada à segmentação por faixa de renda do que alcance massivo.
+* **Comportamento de Compra**: Há uma correlação direta entre o nível de renda anual e a preferência por compras via catálogo, permitindo a redução de custos em anúncios digitais para esse nicho específico.
 
 ## 📷 Visualização do Projeto
 ![Visão do Cliente](images/visao_cliente.png)
