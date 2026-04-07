@@ -23,7 +23,7 @@ O desafio central era a falta de integração entre os dados demográficos dos c
 ## ⚙️ Tecnologias e Dados
 * **Ferramenta**: Power BI Desktop para modelagem e visualização.
 * **Processamento (ETL)**: Utilização do Power Query para tratamento de dados sensíveis, conversão de tipo de dados (como faturamento e custo) e normalização de categorias demográficas.
-* **Dataset**: Base de dados *dados_marketing.csv* composta por variáveis como:
+* **Dataset**: Base de dados 'dados_marketing.csv' composta por variáveis como:
   * **Demográficas**: Escolaridades, Renda, Estado Civil e Idade.
   * **Comerciais**: Volume de vendas (Loja, Web, Catálogo) e reclamações.
   * **Marketing**: Cliques, impressões, custos e retorno financeiro por campanha.
