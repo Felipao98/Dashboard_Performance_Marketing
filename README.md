@@ -27,6 +27,13 @@ O desafio central era a falta de integração entre os dados demográficos dos c
   * **Demográficas**: Escolaridades, Renda, Estado Civil e Idade.
   * **Comerciais**: Volume de vendas (Loja, Web, Catálogo) e reclamações.
   * **Marketing**: Cliques, impressões, custos e retorno financeiro por campanha.
+* **Lógica de Negócio**: Para a análise de rentabilidade descrita nas anotações de marketing, foi implementada a métrica de ROI via **DAX**:
+  `Métrica ROI = 
+DIVIDE(
+    SUM('dados_marketing'[receita]) - SUM('dados_marketing'[custo]), 
+    SUM('dados_marketing'[custo]), 
+    0
+)`
 
 ## 💡 Insights Estratégicos Extraídos
 * **Fidelização vs. Escolaridade**: Clientes com nível superior ou mestrado apresentam um ticket médio superior e menor taxa de reclamação, sugerindo que campanhas com linguagem técnica e informativa são mais eficazes.
