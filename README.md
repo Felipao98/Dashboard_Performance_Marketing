@@ -28,7 +28,7 @@ O objetivo é solucionar a fragmentação dos dados de marketing. Antes deste da
 * **Sazonalidade**: Análise do comportamento das vendas ao longo do período filtrado.
 
 ## 📷 Visualização do Projeto
-![Print do Dashboard](link-da-imagem-aqui)
+![Visão do Cliente](images/visao_cliente.png)
 *(Dica: Coloque uma imagem da tela principal do seu Power BI aqui)*
 
 ## 📂 Como acessar o projeto
