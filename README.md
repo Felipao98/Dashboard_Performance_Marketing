@@ -29,7 +29,9 @@ O objetivo é solucionar a fragmentação dos dados de marketing. Antes deste da
 
 ## 📷 Visualização do Projeto
 ![Visão do Cliente](images/visao_cliente.png)
-*(Dica: Coloque uma imagem da tela principal do seu Power BI aqui)*
+![Visão do Comportamento de Compra do Cliente](images/visao_comportamento.png)
+![Visão da Performance das Campanhas de Marketing](images/visao_performance.png)
+![Visão dos Padrões de Compra no Ponto de Venda](images/visao_pontos_venda.png)
 
 ## 📂 Como acessar o projeto
 1. Baixe o arquivo `Analise_Performance_Marketing.pbix` deste repositório.
