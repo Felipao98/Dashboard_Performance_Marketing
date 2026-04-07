@@ -29,6 +29,7 @@ O desafio central era a falta de integração entre os dados demográficos dos c
   * **Marketing**: Cliques, impressões, custos e retorno financeiro por campanha.
 * **Lógica de Negócio**: Para a análise de rentabilidade descrita nas anotações de marketing, foi implementada a métrica de ROI via **DAX**:
 $$ ROI = \frac{\text{Receita} - \text{Custo}}{\text{Custo}} $$
+  * Fórmula DAX:
   `Métrica ROI = 
 DIVIDE(
     SUM('dados_marketing'[receita]) - SUM('dados_marketing'[custo]), 
